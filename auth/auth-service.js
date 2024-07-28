@@ -37,7 +37,7 @@ async function registerUser(userData) {
   await newUser.save();
 
   // Generisanje verifikacionog tokena
-  const verificationToken = jwt.sign({ userId: newUser._id }, process.env.JWT_SECRET, { expiresIn: '1h' });
+ /* const verificationToken = jwt.sign({ userId: newUser._id }, process.env.JWT_SECRET, { expiresIn: '1h' });
   const verificationLink = `${process.env.BASE_URL}/verify-email?token=${verificationToken}`;
 
   // Generisanje HTML sadržaja email-a
@@ -53,7 +53,7 @@ async function registerUser(userData) {
 
   // Slanje email-a
   await mg.messages().send(data);
-
+*/
   return newUser;
 }
 
