@@ -15,6 +15,6 @@ app.get('/ServisDva', async (req, res) => {
 
 
 
-app.listen(80, () => {
+app.listen(100, () => {
   console.log(`Server running on port 80 ServisDva`);
 });
